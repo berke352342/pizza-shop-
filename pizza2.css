@@ -1,0 +1,65 @@
+body {
+  font-family: 'Oswald', Arial, sans-serif; 
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input, select, button { 
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;  /* it will look more clear */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+img {
+  display: inline-block; /* To align imagese side byside */
+  margin: 10px; /*  Space between the images */
+  max-width: 100%; 
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff6600;
+  color: black; 
+  padding: 5px; /*  if we want bigger we make this bigger like 30px but 5px is good*/
+  width: 100%; /*  background color so its oranges width */
+}
