@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pizza Shop </title>
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pizza2.css">
+</head>
+
+ <body>
+    <header>
+        <h1>Welcome to the Pizza Shop!</h1> <!-- the biggest title of the page -->
+    </header>
+     
+    <section>
+        <h2>Our pizzas</h2>
+        <img src="pizza1.png" alt="Pepperoni Pizza" />
+        <img src="pizza2.png" alt="Mushrooms Pizza" />
+        <img src="pizza3.png" alt="Onions Pizza" />
+    </section>
+
+    <section>
+        <h2>Order Your Pizza</h2> 
+        <form>
+            <label for ="numPizzas">How many pizza?</label>
+            <input type="number" id="numPizzas" name="numPizzas" min="1" max="10" required>
+            <label for="size">Pizza size:</label>
+
+            <select id="size" name="size" required> 
+                <option value="">Select size</option> <!-- we add options-->
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <fieldset> <!-- they will able to choose ingredients -->
+                <legend>Select your toppings:</legend>
+                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" id="onions" name="topping" value="onions">
+                <label for="onions">Onions</label>
+            </fieldset>
+
+            <label for="email">Email for confirmation:</label> <!-- they need to type their mail adress -->
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Order Now</button> <!-- pizza will be order when its clicked -->
+        </form>
+    </section>
+    <footer>
+  <p> 2024 Pizza Shop. All rights reserved.</p>
+  <p>Contact us: info@thebestpizzashop.com</p>
+    </footer>
+</body>
+</html>
