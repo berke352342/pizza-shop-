@@ -20,4 +20,4 @@ This project is a web application where users can order pizza.
 
 ## Developer
 
-- Berke
+Berke
