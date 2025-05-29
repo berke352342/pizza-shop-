@@ -1,65 +1,96 @@
 body {
-  font-family: 'Oswald', Arial, sans-serif; 
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 30px;
+    background-color: #ffbb00;
+    margin: 10px;
+}
+
+h1,h2,h3,h5 {
+    font-family: Arial, Helvetica, sans-serif /* I wanted to use this font */
+}
+
+label, li, a, label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
 }
 
 header {
-  text-align: center;
-  background-color: #ff6600;
-  color: white;
-  padding: 10px;
+    height: 400px;
 }
 
-section {
-  margin: 20px 0;
+header > div {
+ width: auto;
+ float: top;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
+header > div > h1 {
+ width: auto;
+ height: 50px;
+ padding: 1%;
+} 
+
+header > div > img {
+ width: auto;
+ height: 150px;
+ margin: 15px;
 }
 
-label {
-  margin: 10px 0 5px;
+header > nav {
+    float: left;
 }
 
-input, select, button { 
-  padding: 10px;
-  margin-bottom: 10px;
+header > nav > ul {
+margin: 19px;
+padding: 10px;
 }
 
-fieldset {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
+header > nav > ul > li {
+padding: 10px;
 }
 
-button {
-  background-color: #ff6600;
-  color: white;
-  border: none;  /* it will look more clear */
-  cursor: pointer;
+header > nav > ul > li > a {
+color: #000000;
 }
 
-button:hover {
-  background-color: #e65c00;
+main > section {
+   padding: 50px;
+   width: 95%;
 }
 
-img {
-  display: inline-block; /* To align imagese side byside */
-  margin: 10px; /*  Space between the images */
-  max-width: 100%; 
-  height: auto;
+main > section > h2 {
+    color: #000000f3;
+    padding: 30px;
+    
+}
+
+main > section > img {
+    width: 30%;
+    height: auto;
+    padding: 22px;
+}
+
+main > section + section {
+    background-color: rgb(255, 0, 187);
+    clear: both;
+}
+
+main > section + section > h3 {
+    color:#b40f0f;
+    height: 60px;
+    float: middle; 
+}
+
+section form { 
+    padding: 30px;
+    margin: 10px;
+}
+
+section form label {
+    display: block;
+    margin: 3px; 
 }
 
 footer {
-  text-align: center;
-  background-color: #ff6600;
-  color: black; 
-  padding: 5px; /*  if we want bigger we make this bigger like 30px but 5px is good*/
-  width: 100%; /*  background color so its oranges width */
+    background-color: rgb(255, 183, 0);
+    margin: 10px;
+    padding: 1px;
+    text-align: center;
 }
